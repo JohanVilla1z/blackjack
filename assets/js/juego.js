@@ -1,5 +1,4 @@
-import _ from 'underscore';
-
+import * as _ from 'underscore';
 /**
  * 2C = two of cloves
  * 2D = two of diamonds
