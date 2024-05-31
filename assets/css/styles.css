@@ -20,5 +20,12 @@ html, body {
     margin-left: -15%
 }
 #computadora-cartas, #jugador-cartas {
-    height: 15%;
+    height: 50%;
+}
+
+.carta-inicial {
+    position: relative;
+    width: 30%;
+    left: 14%;
+    margin-left: -15%
 }
