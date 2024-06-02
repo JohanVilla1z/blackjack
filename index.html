@@ -28,7 +28,7 @@
     <div class="row container">
         <div class="col">
 
-            <h1>Jugador 1 - <small>0</small></h1>
+            <h1 id="nombre" >Jugador 1 - <small>0</small></h1>
             <div id="jugador-cartas">
                 <!-- <div id="carta-inicial" ><img class="carta" src="assets/cartas/red_back.png" alt=""></div> -->
 
@@ -53,6 +53,27 @@
     </div>
     <script type="module" src="assets/js/backbone-min.js"></script>
     <script type="module" src="assets/js/juego.js"></script>
+    <script src="assets/js/copilot.js"></script>
+    <br><br><br>
 </body>
+<footer class="footer mt-auto py-3">
+    
+        <div class="t-descripcion text-center" >
+            <br>
+            <b><i>¿Cómo jugar?</i></b>
+            <br><br>
+        </div>
+
+    <div class="descripcion container">
+        
+            <p>El objetivo del <b><i>BlackJack</i></b> es tener una mano de cartas cuya suma de puntos sea lo más cercana posible a <strong>21 sin pasarse</strong>. Los jugadores compiten contra el crupier (la computadora), no entre ellos.</p>
+            <p>Puntos de las cartas:</p>
+            <li>Cartas numeradas (2-10): Tienen el valor correspondiente a su número. Por ejemplo, un 4 vale 4 puntos.</li>
+            <li>Cartas con figuras (Jota, Reina y Rey): Todas valen 10 puntos.</li>
+            <li>Ases: En el caso de esta mesa ya desarrollada, tienen un valor de 11 puntos aunque en algunas reglas se considera que tiene un valor de 1.</li>
+            <br>
+    </div>
+
+</footer>
 
 </html>

@@ -15,17 +15,28 @@ html, body {
 
 .carta {
     position: relative;
-    width: 30%;
+    width: 22%;
     left: 14%;
     margin-left: -15%
-}
-#computadora-cartas, #jugador-cartas {
-    height: 50%;
 }
 
 .carta-inicial {
     position: relative;
-    width: 30%;
+    width: 22%;
     left: 14%;
     margin-left: -15%
+}
+
+.footer{
+    background-color: black;
+}
+
+.t-descripcion {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    left-margin: 20px;
+    background-color: black;
 }
