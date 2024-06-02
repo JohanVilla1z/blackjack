@@ -9,7 +9,7 @@ html, body {
     text-align: center;
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 0px;
     font-size: 25px;
 }
 
@@ -29,6 +29,8 @@ html, body {
 
 .footer{
     background-color: black;
+    width: 100%;
+    padding 0px;
 }
 
 .t-descripcion {

@@ -13,6 +13,7 @@
     //Rerferencias HTML
     const puntos = document.querySelectorAll('small'),                              //puntos de jugador y computadora
           btnPedir = document.querySelector('#btnPedir'),                           //boton pedir carta
+          btnNombre = document.querySelector('#btnNombre'),                           //boton pedir carta
           btnDetener = document.querySelector('#btnDetener'),                       //boton detener
           btnNuevoJuego = document.querySelector('#btnNuevo'),                      //Nuevo juego
           divNombreJugador = document.querySelector('#nombre'),       //TODO              //Nombre Jugador
@@ -27,6 +28,7 @@
             CartaInicial2.classList.add('carta-inicial');
             divCartasJugador.append(CartaInicial);
             divCartasComputadora.append(CartaInicial2);
+            divNombreJugador.innerText = 'Jugador';
 
     const crearDeck = () => {
         deck
@@ -90,6 +92,14 @@
 
     };
     //Eventos
+    btnNombre.addEventListener('click', () => {
+        let nombre = prompt('Ingrese su nombre');
+        nombre= (nombre)?nombre:'Jugador';
+        divNombreJugador.innerText = nombre;
+        btnNombre.disabled = true;
+
+    });
+
     btnPedir.addEventListener('click', () => {
         const carta = pedirCarta();
         console.log({ carta }, valorCarta(carta));                      //TODO Borrar
@@ -100,7 +110,10 @@
         imgCarta.src = `assets/cartas/${carta}.png`;
         imgCarta.classList.add('carta');
         divCartasJugador.append(imgCarta);
-        CartaInicial.remove();
+        
+        setTimeout(() => {
+            CartaInicial.remove();
+        }, 80);
 
         if (puntosJugador > 21) {
             console.warn('Perdiste');
@@ -131,6 +144,7 @@
         divCartasComputadora.innerHTML = '';
         divCartasJugador.innerHTML = '';
         btnPedir.disabled = false;
+        btnNombre.disabled = false;
         btnDetener.disabled = false;
         divCartasJugador.append(CartaInicial);
         divCartasComputadora.append(CartaInicial2);

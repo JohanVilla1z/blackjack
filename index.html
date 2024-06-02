@@ -18,39 +18,32 @@
     </header>
 
     <div class="row mt-2">
+
         <div id="divBotones" class="col text-center">
-            <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
+            <button id="btnNombre" class="btn btn-success mb-2">Nombre</button>
+            <button id="btnNuevo" class="btn btn-danger mb-2">Nuevo Juego</button>
+            <br>
             <button id="btnPedir" class="btn btn-primary">Pedir carta</button>
             <button id="btnDetener" class="btn btn-primary">Detener</button>
+            <hr>
         </div>
     </div>
 
     <div class="row container">
         <div class="col">
 
-            <h1 id="nombre" >Jugador 1 - <small>0</small></h1>
-            <div id="jugador-cartas">
-                <!-- <div id="carta-inicial" ><img class="carta" src="assets/cartas/red_back.png" alt=""></div> -->
-
-                <!-- <img class="carta" src="assets/cartas/2C.png" alt="Carta dos de corazones">
-                <img class="carta" src="assets/cartas/2C.png" alt="Carta dos de corazones">
-                <img class="carta" src="assets/cartas/2C.png" alt="Carta dos de corazones">
-                <img class="carta" src="assets/cartas/2C.png" alt="Carta dos de corazones"> -->
-            </div>
+            <h1><span id="nombre">Jugador 1</span> - <small>0</small></h1>
+            <div id="jugador-cartas"></div>
         </div>
     </div>
 
     <div class="row container mt-2">
         <div class="col">
             <h1>Computadora - <small>0</small></h1>
-            <div id="computadora-cartas">
-                <!-- <img class="carta" src="assets/cartas/10S.png" alt="Carta dos de corazones"> -->
-                <!-- <img class="carta" src="assets/cartas/3H.png" alt="Carta dos de corazones">
-                <img class="carta" src="assets/cartas/3H.png" alt="Carta dos de corazones">
-                <img class="carta" src="assets/cartas/3H.png" alt="Carta dos de corazones"> -->
-            </div>
+            <div id="computadora-cartas"></div>
         </div>
     </div>
+
     <script type="module" src="assets/js/backbone-min.js"></script>
     <script type="module" src="assets/js/juego.js"></script>
     <script src="assets/js/copilot.js"></script>
@@ -66,12 +59,17 @@
 
     <div class="descripcion container">
         
-            <p>El objetivo del <b><i>BlackJack</i></b> es tener una mano de cartas cuya suma de puntos sea lo más cercana posible a <strong>21 sin pasarse</strong>. Los jugadores compiten contra el crupier (la computadora), no entre ellos.</p>
+            <p>El objetivo del <strong><i>BlackJack</i></strong> es tener una mano de cartas cuya suma de puntos sea lo más cercana posible a 
+                <strong>21 sin pasarse</strong>. Para dejar de recibir cartas, presione el botón <strong>Detener</strong>, 
+                y para reiniciar el juego despues de ver la alerta de quien ganó, presione el botón <strong>Nuevo Juego</strong>.
+            </p>
             <p>Puntos de las cartas:</p>
             <li>Cartas numeradas (2-10): Tienen el valor correspondiente a su número. Por ejemplo, un 4 vale 4 puntos.</li>
             <li>Cartas con figuras (Jota, Reina y Rey): Todas valen 10 puntos.</li>
-            <li>Ases: En el caso de esta mesa ya desarrollada, tienen un valor de 11 puntos aunque en algunas reglas se considera que tiene un valor de 1.</li>
+            <li>Ases: En el caso de esta mesa ya desarrollada, tienen un valor de 11 puntos aunque en algunas reglas se considera que 
+                tiene un valor de 1.</li>
             <br>
+            <p></p>
     </div>
 
 </footer>
